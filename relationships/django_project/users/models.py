@@ -29,7 +29,7 @@ class UserProfile(models.Model):
                                 related_name='user_profile',
                                 on_delete=models.CASCADE)
     def __str__(self):
-        return f"{self.name}-{self.user_surname}"
+        return f"{self.name}-{self.surname}"
     
 class Post(models.Model):
     title = models.CharField(max_length=255)
